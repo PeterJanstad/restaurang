@@ -6,8 +6,13 @@ import org.junit.jupiter.api.Test;
 
 public class MaxAntalPlatserTest {
     
+    MaxAntalPlatser platser = new MaxAntalPlatser();
+
     @Test
     void maxSeatShouldBeSixty(){
-        assertEquals(60,60);
+
+    
+    int actualSeats = platser.getMaxSeats;
+assertEquals(60,actualSeats);
     }
 }
