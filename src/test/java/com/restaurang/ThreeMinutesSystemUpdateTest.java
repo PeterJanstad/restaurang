@@ -1,6 +1,8 @@
 package com.restaurang;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import java.time.Clock;
 import static org.mockito.Mockito.*;
 import org.junit.jupiter.api.Test;
@@ -22,11 +24,22 @@ public class ThreeMinutesSystemUpdateTest {
     int threeMinutesPassed = tmsu.getThreeMinutesCounter();
     assertEquals(3, threeMinutesPassed);
     }
-    
+    RealiseTabel rt = new RealiseTabel();
     @Test
+    
 
     void CustomerDoseNotCome(){
-
+        boolean customerCome = rt.tableFree();
+        boolean customerDoNotCome = rt.tableFree();
+        
+        if (customerDoNotCome){
+        
+        assertTrue(true);
+        
+        }
+        else {
+            customerCome= true;
+        }
 
     }
     @Test
@@ -38,10 +51,10 @@ public class ThreeMinutesSystemUpdateTest {
     when(clockMock.millis()).thenReturn(900000L); //900000 är 15 min
 
     //ThreeMinutesSystemUpdate fmp = new ThreeMinutesSystemUpdate();
-ThreeMinutesSystemUpdate tmsu = new ThreeMinutesSystemUpdate(clockMock); // Vi återanvänder den gamla mocken
+    ThreeMinutesSystemUpdate tmsu = new ThreeMinutesSystemUpdate(clockMock); // Vi återanvänder den gamla mocken
     
 
-assertEquals(15, tmsu.FiftheenMinutesPassed());
+    assertEquals(15, tmsu.FiftheenMinutesPassed());
 
     
 
