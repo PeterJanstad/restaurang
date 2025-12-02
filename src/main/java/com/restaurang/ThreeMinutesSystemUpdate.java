@@ -1,8 +1,16 @@
 package com.restaurang;
+import java.time.*;
 
 public class ThreeMinutesSystemUpdate {
-    
-    public int getThreeMinutesCounter(){
-        return 3;
+
+private final Clock clock;
+
+   
+    public ThreeMinutesSystemUpdate(Clock clock){
+        this.clock = clock; 
+    }
+     public int getThreeMinutesCounter(){
+        return (int)(clock.millis()/180000);
+
     }
 }
