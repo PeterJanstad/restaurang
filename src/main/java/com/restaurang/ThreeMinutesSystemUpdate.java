@@ -17,6 +17,7 @@ private final Clock clock;
     }
 
     public int FiftheenMinutesPassed(){
-      //  return (int)(clock.millis() * 180000);
+        //return 15;
+      return (int)(clock.millis() /60000); //Vi delar 900000 / 60000
     }
 }
