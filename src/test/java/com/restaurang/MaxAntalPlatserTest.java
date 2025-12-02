@@ -12,7 +12,7 @@ public class MaxAntalPlatserTest {
     void maxSeatShouldBeSixty(){
 
     
-    int actualSeats = platser.getMaxSeats;
+    int actualSeats = platser.getMaxSeats();
 assertEquals(60,actualSeats);
     }
 }

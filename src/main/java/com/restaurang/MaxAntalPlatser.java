@@ -1,7 +1,7 @@
 package com.restaurang;
 public class MaxAntalPlatser {
     
-    public static getMaxSeats(){
+    public int getMaxSeats(){
         return 60;
     }
 }
