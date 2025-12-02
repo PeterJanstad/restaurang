@@ -15,4 +15,8 @@ private final Clock clock;
         return (int)(clock.millis() / 180000);
         //return 3;
     }
+
+    public int FiftheenMinutesPassed(){
+      //  return (int)(clock.millis() * 180000);
+    }
 }

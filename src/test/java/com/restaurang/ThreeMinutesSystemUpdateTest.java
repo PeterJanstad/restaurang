@@ -22,4 +22,22 @@ public class ThreeMinutesSystemUpdateTest {
     assertEquals(3, threeMinutesPassed);
     }
     
+    @Test
+
+    void CustomerDoseNotCome(){
+
+
+    }
+    @Test
+    void tableGetsFreAfterFitheenMinutes(){
+
+    Clock clockMock = mock(Clock.class);
+    when(clockMock.millis()).thenReturn(900000L);
+
+    int FiftheenMinutesPassed = fmp.FiftheenMinutesPassed();
+
+    //boolean expected = true;
+    //assertTrue(expected);
+    }
 }
+
